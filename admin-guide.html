@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理者ガイド - 自動れんらく帳</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f5f5f5;
+            padding-bottom: 40px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #f5576c;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background: #f5576c;
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+        
+        .section p {
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        
+        .image-container {
+            margin: 20px 0;
+        }
+        
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .steps {
+            background: #f8f9ff;
+            padding: 16px;
+            border-left: 4px solid #f5576c;
+            margin: 12px 0;
+            border-radius: 4px;
+        }
+        
+        .steps ol {
+            margin-left: 20px;
+        }
+        
+        .steps li {
+            margin: 8px 0;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px 16px;
+            margin: 16px 0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .faq {
+            background: #f8f9ff;
+            padding: 16px;
+            border-left: 4px solid #f5576c;
+            margin: 12px 0;
+            border-radius: 4px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #f5576c;
+            margin-bottom: 8px;
+        }
+        
+        .faq-answer {
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔧 管理者ガイド</h1>
+        <p>自動れんらく帳の使い方</p>
+    </div>
+    
+    <div class="container">
+        <!-- セクション1 -->
+        <div class="section">
+            <div class="section-title">📊 1. 管理画面を開く</div>
+            <p>日別シート画面の右上にあるメニュー（三本線）をタップし、「管理者」を選択してください。</p>
+            
+            <div class="image-container">
+                <img src="https://drive.google.com/uc?export=view&id=11ZR-4BH13CNk0lHeoO1y3c0Hw4yV8UCp" alt="管理画面全体">
+            </div>
+        </div>
+        
+        <!-- セクション2 -->
+        <div class="section">
+            <div class="section-title">👥 2. スタッフの確認状況を見る</div>
+            <p>「本日の共有事項」をタップすると、今日の共有事項と確認状況が表示されます。</p>
+            
+            <div class="image-container">
+                <img src="https://drive.google.com/uc?export=view&id=1YhMoJXIgQ0TWRj8RPTiIyyqzUVxFniEp" alt="共有事項モーダル">
+            </div>
+            
+            <p>各共有事項をタップすると、確認者リストが表示されます。</p>
+            
+            <div class="image-container">
+                <img src="https://drive.google.com/uc?export=view&id=11oZFhLlbbrxh03HiZpwi5jUrnh1VvLG9" alt="確認者リスト">
+            </div>
+        </div>
+        
+        <!-- セクション3 -->
+        <div class="section">
+            <div class="section-title">🗑️ 3. 共有事項を削除する</div>
+            <p>間違って投稿された情報や、不要になった共有事項は削除できます。</p>
+            <p>確認者リスト画面で「削除」ボタンをタップしてください。</p>
+            
+            <div class="warning">
+                ⚠️ <strong>注意：</strong> 削除すると元に戻せません。慎重に操作してください。
+            </div>
+        </div>
+        
+        <!-- セクション4 -->
+        <div class="section">
+            <div class="section-title">👤 4. 新しいスタッフを追加する</div>
+            <p>管理メニューの「招待コード管理」をタップしてください。</p>
+            
+            <div class="image-container">
+                <img src="https://drive.google.com/uc?export=view&id=1N2XBIRK1uuKopgLbtJ9DFn9X358FMSHr" alt="招待コード管理">
+            </div>
+            
+            <div class="steps">
+                <strong>手順：</strong>
+                <ol>
+                    <li>「新しい招待コードを生成」をタップ</li>
+                    <li>招待コードが表示されます</li>
+                    <li>「LINEで共有」をタップ</li>
+                    <li>LINEグループに送信</li>
+                    <li>新しいスタッフがボタンをタップして登録完了</li>
+                </ol>
+            </div>
+            
+            <p style="margin-top: 20px;">LINEグループには以下のようなメッセージが投稿されます：</p>
+            
+            <div class="image-container">
+                <img src="https://drive.google.com/uc?export=view&id=1oFjpo9AmmoXA1zWQxvTj9YT06RriIAaz" alt="グループに投稿された招待コード">
+            </div>
+        </div>
+        
+        <!-- セクション5 -->
+        <div class="section">
+            <div class="section-title">⚙️ 5. その他の設定</div>
+            <p>管理メニューから「LINE設定」をタップすると、以下の設定ができます：</p>
+            <ul style="margin-left: 20px; margin-top: 12px;">
+                <li><strong>Group ID：</strong> LINEグループの識別番号（変更不要）</li>
+                <li><strong>デッドライン設定：</strong> 確認期限の設定（今後実装予定）</li>
+            </ul>
+        </div>
+        
+        <!-- FAQ -->
+        <div class="section">
+            <div class="section-title">❓ よくある質問</div>
+            
+            <div class="faq">
+                <div class="faq-question">Q: スタッフが確認したかどうかをLINEで確認できますか？</div>
+                <div class="faq-answer">A: 現在、LINEへの通知機能はありません。管理画面から確認してください。</div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">Q: 間違って共有事項を削除してしまいました</div>
+                <div class="faq-answer">A: 削除した共有事項は復元できません。元のLINEメッセージを確認してください。</div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">Q: 招待コードの有効期限はありますか？</div>
+                <div class="faq-answer">A: 現在、有効期限はありません。一度生成した招待コードは削除するまで使用できます。</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
