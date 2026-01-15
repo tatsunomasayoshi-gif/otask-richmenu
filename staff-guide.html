@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スタッフガイド - 自動れんらく帳</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f5f5f5;
+            padding-bottom: 40px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background: #667eea;
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+        
+        .section p {
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        
+        .image-container {
+            margin: 20px 0;
+        }
+        
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .faq {
+            background: #f8f9ff;
+            padding: 16px;
+            border-left: 4px solid #667eea;
+            margin: 12px 0;
+            border-radius: 4px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+        
+        .faq-answer {
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📱 スタッフガイド</h1>
+        <p>自動れんらく帳の使い方</p>
+    </div>
+    
+    <div class="container">
+        <!-- セクション1 -->
+        <div class="section">
+            <div class="section-title">📌 1. 日別シートを開く</div>
+            <p>毎日、LINEグループに「日別シート」が自動配信されます。</p>
+            
+            <div class="image-container">
+                <img src="https://drive.google.com/uc?export=view&id=1TQ_tvKX-_MKOCIOocVh4tY6azykcNs_0" alt="LINEグループのトーク画面">
+            </div>
+        </div>
+        
+        <!-- セクション2 -->
+        <div class="section">
+            <div class="section-title">✅ 2. 共有事項を確認する</div>
+            <p>日別シートには、その日にグループLINEに投稿された情報が自動的に記録されています。</p>
+            
+            <div class="image-container">
+                <img src="https://drive.google.com/uc?export=view&id=1k47P4jAX5hl_9sSGyCj4mlmUuBWz3ayB" alt="日別シート画面">
+            </div>
+            
+            <p>内容を確認したら、「確認しました」ボタンをタップしてください。</p>
+            
+            <div class="image-container">
+                <img src="https://drive.google.com/uc?export=view&id=1Ou1eupSo4XMH5w32dWgfAUUxkauvORa6" alt="確認ボタン">
+            </div>
+        </div>
+        
+        <!-- セクション3 -->
+        <div class="section">
+            <div class="section-title">🎉 3. 確認完了</div>
+            <p>ボタンをタップすると、「確認済み」の表示に変わります。</p>
+            
+            <div class="image-container">
+                <img src="https://drive.google.com/uc?export=view&id=1j3V4cewtR1oYthGGJrnEjv3xbssfGC8H" alt="確認済み表示">
+            </div>
+            
+            <p>これで完了です！管理者は誰が確認したかを把握できます。</p>
+        </div>
+        
+        <!-- セクション4 -->
+        <div class="section">
+            <div class="section-title">📅 4. 過去の日付を見る</div>
+            <p>過去の共有事項を確認したい場合は、画面上部の日付ボタンをタップしてください。</p>
+            
+            <div class="image-container">
+                <img src="https://drive.google.com/uc?export=view&id=1SC88A7ftDiJrEkeQUg-H_AesnrQeFRKs" alt="日付選択">
+            </div>
+            
+            <p>表示された日付の中から、見たい日を選んでタップすれば、その日の共有事項が表示されます。</p>
+        </div>
+        
+        <!-- FAQ -->
+        <div class="section">
+            <div class="section-title">❓ よくある質問</div>
+            
+            <div class="faq">
+                <div class="faq-question">Q: 確認ボタンを押し忘れたらどうなりますか？</div>
+                <div class="faq-answer">A: 管理者から確認の依頼が来ることがあります。気づいたらすぐに確認してください。</div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">Q: 間違って確認ボタンを押してしまいました</div>
+                <div class="faq-answer">A: 一度確認済みにすると取り消せません。内容をもう一度よく読んでから確認してください。</div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">Q: LINEグループに日別シートが配信されないのですが？</div>
+                <div class="faq-answer">A: 共有事項（グループへの投稿）がない日は配信されません。何か投稿があった日のみ自動配信されます。</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
